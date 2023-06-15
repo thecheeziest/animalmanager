@@ -1,0 +1,110 @@
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+    color: #5e5e5e;
+    font-size: 18px;
+    .left {
+        width: 520px;
+        margin-right: 100px;
+        .btn {
+            display: flex;
+            justify-content: space-between;
+        }
+        .Peoplelist {
+            li {
+                width: 520px;
+                height: 200px;
+                border: 1px solid #acbdff;
+                border-radius: 25px;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                box-sizing: border-box;
+                .pic {
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        transform: translateX(-10%);
+                    }
+                }
+                .pro {
+                    font-size: 20px;
+                    strong {
+                        display: block;
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #8ba2ff;
+                        margin-bottom: 20px;
+                    }
+                }
+                .like {
+                    width: 50px;
+                    font-size: 50px;
+                    color: #f7a1ff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .right {
+        width: 400px;
+        height: 600px;
+        .show {display: none;}
+        .show.on {display: block;}
+        form {
+            p {
+                width: 330px;
+                display: flex;
+                justify-content: space-between;
+                label {
+
+                }
+                input {
+                    width: 250px;
+                    height: 30px;
+                    border: none;
+                    background: #e4eaff;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    text-indent: 10px;
+                    outline: none;
+                }
+            }
+        }
+        strong {
+            display: block;
+            font-weight: 700;
+            margin-top: 50px;
+        }
+        ul {
+            li {
+
+            }
+        }
+    }
+    button {
+        width: 200px;
+        height: 50px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 700;
+        background: #acbdff;
+        cursor: pointer;
+        &:hover {
+            background: #8ba2ff;
+        }
+    }
+}
